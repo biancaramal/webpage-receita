@@ -1,0 +1,81 @@
+/* Style Guide */
+:root {
+    /*bgs*/
+    --background-color: #573824;
+    --surface-color: #F0E8C2;
+    /*text colors*/
+    --text-color-primary: #291B1A;
+    --text-color-secondary: #573A37;
+    --text-color-on-bg: #F0E8C2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--background-color);
+    background-image: url('assets/bg-image.png');
+    background-size: cover;
+    padding: 48px;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: var(--surface-color);
+    border-radius: 24px;
+    padding: 24px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    padding: 24px;
+}
+
+#ingredients, #preparation {
+    margin-top: 24px;
+}
+
+h1, h2 {
+    color: var(--text-color-primary);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+#about > p + p, #preparation > p + p {
+    margin-top: 12px;
+}
+
+p, li {
+    color: var(--text-color-secondary)
+}
+
+ul {
+    margin-left: 24px;
+}
+
+footer {
+    margin-top: 24px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--text-color-on-bg);
+}
